@@ -63,3 +63,48 @@ Aplikasi manajemen program loyalitas member yang komprehensif dengan sistem tier
 cd loyalty-app/backend
 npm install
 npm start
+
+Server berjalan di http://localhost:5000
+
+Frontend Setup
+bash
+cd loyalty-app/frontend
+npm install
+npm start
+Aplikasi berjalan di http://localhost:3000
+
+📁 Project Structure
+java
+loyalty-app/
+├── backend/
+│   ├── server.js
+│   ├── database.js
+│   ├── loyalty.db
+│   ├── .env
+│   └── package.json
+│
+└── frontend/
+    ├── src/
+    ├── .env
+    └── package.json
+🔐 Environment Variables
+Backend (.env):
+
+makefile
+PORT=5000
+JWT_SECRET=your_secret_key
+Frontend (.env):
+
+bash
+REACT_APP_API_URL=http://localhost:5000/api
+💡 Fitur Utama
+Member registration & management
+Automatic tier system based on spending
+Transaction recording dengan auto-discount
+Analytics & reporting
+Data export & backup
+📝 License
+MIT License
+
+👤 Author
+Hasbikur
